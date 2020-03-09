@@ -6,9 +6,11 @@ block body
             $("#btn_insert").click(function(){
                 document.location.href="/book/insert"
             })
+
             $(".book_tr").click(function(){
                 let id = $(this).data("id")
                 document.location.href="/book/update/" + id
+               
             })
         })
     table.w3-table.w3-striped.w3-hoverable.w3-border
@@ -28,3 +30,4 @@ block body
                 td= book.BYear
                 td= book.BPrice
     button#btn_insert.w3-button.w3-blue.w3-right 추가
+
