@@ -3,12 +3,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost/mydb')
 
 var app = express();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var naverRouter = require('./routes/naverRouter')(app)
+var naverRouter = require("./routes/naverRouter")
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/naver', naverRouter)
+app.use("/naver",naverRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

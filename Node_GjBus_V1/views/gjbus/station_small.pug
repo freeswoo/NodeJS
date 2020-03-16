@@ -8,7 +8,7 @@ block content
                 th No
                 th 정류장ID
                 th 정류장
-                th 다음 정류장명
+                th 다음 정류장
                 th 경도
                 th 위도
             each station,index in stations
@@ -19,8 +19,8 @@ block content
                     td= station.NEXT_BUSSTOP
                     td= station.LONGITUDE
                     td= station.LATITUDE
+
     p
     hr
     p
     section#bustime.container-fluid
-    

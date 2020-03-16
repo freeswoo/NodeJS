@@ -1,5 +1,5 @@
 {
-  "name": "node-naver-v2",
+  "name": "node-naver-v1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
+    "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "express-paginate": "^1.0.0",

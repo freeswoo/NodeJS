@@ -1,14 +1,12 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body {
     padding-top: 100px;
     position: relative;
 }
-
 ul.main-menu {
     background-color: white;
     width: 99%;
@@ -19,23 +17,24 @@ ul.main-menu {
 
     position: fixed;
     top: 0px;
-    left: 10px;
+    left:10px;
     transition: 0.3s;
     z-index: 10;
+
 }
 
 ul.main-menu a {
     display: block;
-    color: black;
-    text-align: center;
+    color:black;
+    text-align : center;
     text-decoration: none;
     font-size: 15px;
-    padding: 1rem;
+    padding:1rem;
 }
 
 ul.main-menu li:nth-child(1) {
     background-color: blue;
-    color: white;
+    color:white;
     font-weight: bold;
     font-style: italic;
 
@@ -45,7 +44,8 @@ ul.main-menu li:nth-child(1) {
 
 ul.main-menu li:hover {
     background-color: #ddd;
-    color: blue;
+    color:blue;
+
 }
 
 ul.main-menu li:nth-child(4) {
@@ -53,12 +53,13 @@ ul.main-menu li:nth-child(4) {
 }
 
 ul.main-menu a:nth-child(1) {
-    color: inherit;
+    color:inherit;
 }
 
 ul.main-menu input {
-    border: 1px solid green;
+    border:1px solid green;
     margin: 10px;
     padding: 10px;
-    width: 300px;
+    width: 70%;
+
 }

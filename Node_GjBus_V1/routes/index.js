@@ -4,6 +4,7 @@ var gjStation = require("../models/gjbusStation")
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  
   let station = req.query.station
 
   gjStation.find({BUSSTOP_NAME : station})
@@ -11,6 +12,7 @@ router.get('/', function(req, res, next) {
   .exec(function(err,stations){
     res.render("gjbus/station",{stations:stations})
   })
+
 });
 
 module.exports = router;
