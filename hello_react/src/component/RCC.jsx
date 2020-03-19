@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import RCC_SUB from "./RCC_SUB";
 import "./RCC.css";
+
 /*
 ES6의 class 문법으로 콤포넌트 생성
 보통 jsx(js) 파일의 형식으로 저장
@@ -22,5 +23,5 @@ class RCC extends Component {
 }
 
 // 이 콤포넌트를 외부에서 사용할수 있도록 선언
-// export default는 한파일에 한개만 있을수 있다.
+// export default는 한파일에 한개만 있을 수 있다.
 export default RCC;

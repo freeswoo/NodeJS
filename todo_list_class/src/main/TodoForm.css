@@ -11,7 +11,7 @@ div.form input {
 }
 
 div.todo-insert {
-  /* top, bottom 0.5, left와 right 1rem  */
+  /* top, bottom 0.5, left와 right 1rem */
   padding: 0.5rem 1rem;
   margin-left: 1rem;
   background-color: #22b8cf;

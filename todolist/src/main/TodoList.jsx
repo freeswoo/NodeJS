@@ -1,6 +1,5 @@
 import React from "react";
 import TodoItem from "./TodoItem";
-import "./TodoItem.css";
 
 const TodoList = () => {
   // 임시 데이터를 생성
@@ -13,11 +12,12 @@ const TodoList = () => {
     { text: "숙제", checked: true },
     { text: "Home work", checked: false }
   ];
+
   // totoItems(배열)을 순회하면서
   // 각각의 요소를 item 변수에 담고
   // item 변수에 담긴 데이터를 TodoItem에게 text 변수에 담아서
-  // 전달하면서 TodoItem을 리스트 개수만큼 생성하고
-  // TodoList에 담기
+  // 전달하면서 TotoItem을 리스트 개수만큼 생성하고
+  //todoList에 담기
   const todoList = todoItems.map(({ text, checked }) => (
     <TodoItem text={text} checked={checked} />
   ));

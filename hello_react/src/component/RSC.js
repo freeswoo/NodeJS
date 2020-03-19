@@ -8,12 +8,12 @@ const RSC = function() {}
 App.js > RCC.jsx, (RSC.js > RCC_SUB.jsx)
 
 RCC_SUB 콤포넌트에서 name 변수에 값을 담아서 전달하기
-<COM 변수 = "값"/>
+<COM 변수="값"/>
 */
 const RSC = () => {
   return (
     <div>
-      <div> 나는 두번째 함수형 콤포넌트 입니다</div>
+      <div>나는 두번째 함수형 콤포넌트 입니다.</div>
       <RCC_SUB name="홍길동" />
     </div>
   );
