@@ -23,8 +23,8 @@ class BListInsert extends Component {
     ev.preventDefault();
     const { bucket_insert_url } = this.props;
 
-    console.log("전송", this.state.b_title);
-    console.log(bucket_insert_url);
+    // console.log("전송", this.state.b_title);
+    // console.log(bucket_insert_url);
     fetch(bucket_insert_url, {
       method: "POST",
       headers: {
@@ -34,7 +34,9 @@ class BListInsert extends Component {
       body: JSON.stringify({
         b_title: this.state.b_title
       })
-    });
+    })
+      .then(response => response.json())
+      .catch(e => console.log(e));
   };
 
   render() {
