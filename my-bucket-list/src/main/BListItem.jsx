@@ -72,7 +72,7 @@ class BListItem extends Component {
                 onChange={this.editInput}
               />
               <button type="button" onClick={this.updateHandle}>
-                완료
+                수정
               </button>
             </div>
           ) : (
