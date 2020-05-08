@@ -52,6 +52,7 @@ class bbsMain extends Component {
   componentDidMount() {
     this.fetchBbsList();
   }
+
   componentWillReceiveProps(nextProps) {}
 
   /*
